@@ -27,8 +27,8 @@ assign data_out = dmemory[addr_r];//Reading from the memory. Do note that there 
         begin
 	   addr_r <=0;
   	   case(fileid)
-	        0: fin = $fopen("imem_test0.txt","r");
-	        1: fin = $fopen("dmem_test0.txt","r");//here we are using this as the data memory input.txt file. 
+	        0: fin = $fopen("imem_test.txt","r");
+	        1: fin = $fopen("dmem_test.txt","r");//here we are using this as the data memory input.txt file. 
 
 	  endcase
 	  $write("Opening Fileid %d\n", fileid);

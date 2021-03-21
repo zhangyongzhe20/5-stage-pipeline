@@ -27,8 +27,8 @@ module imemory( clk, rst, wen, addr, data_in, fileid, data_out);//This memory ca
                 begin
                     addr_r <=0;
                     case(fileid)
-                        0: fin = $fopen("imem_test0.txt","r");//here we are using this input.txt file. 
-                        1: fin = $fopen("dmem_test0.txt","r");
+                        0: fin = $fopen("imem_test.txt","r");//here we are using this input.txt file. 
+                        1: fin = $fopen("dmem_test.txt","r");
                     endcase
                     $write("Opening Fileid %d\n", fileid);
 
